@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Добавить товар на страницу</h1>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.name.label }}
+            {{ form.name(size=20) }}
+        </p>
+
+        <p>
+            {{ form.description.label }}
+            {{ form.description(size=40) }}
+        </p>
+
+        <p>
+            {{ form.price.label }}
+            {{ form.price(size=20) }}
+        </p>
+
+        <p>
+            {{ form.submit() }}
+        </p>
+
+    </form>
+
+<a href='/'>Вернуться домой</a>
+
+</body>
+</html>
